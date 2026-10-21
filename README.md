@@ -1,7 +1,5 @@
 # GameVault
 
-Página web de videojuegos hecha para la Práctica 3 de la Unidad 3 de Desarrollo Web Integral.
-
 Los juegos se sacan de la API de [RAWG](https://rawg.io/apidocs). Puedes buscarlos, filtrarlos por género y ver su detalle. Si creas una cuenta, también puedes guardar tus favoritos.
 
 ![GameVault](docs/capturas/inicio.jpg)
@@ -46,7 +44,3 @@ Abre http://localhost:8000
 | ![](docs/capturas/catalogo.jpg) | ![](docs/capturas/detalle.jpg) |
 | **Registro** | **Perfil** |
 | ![](docs/capturas/registro.png) | ![](docs/capturas/perfil.jpg) |
-
----
-
-Rodolfo Adrián Herrera Sosa · IDGS 9-2 · UTSLRC
