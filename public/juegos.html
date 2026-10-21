@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juegos · GameVault</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="page-header">
+        <h1>Catálogo de videojuegos</h1>
+        <p>Información en tiempo real desde la API de RAWG.</p>
+      </div>
+
+      <form class="filters" id="filtros">
+        <input id="busqueda" type="search" placeholder="Buscar juego" aria-label="Buscar juego" maxlength="80" />
+        <select id="genero"><option value="">Todos los géneros</option></select>
+        <select id="orden">
+          <option value="-added">Más populares</option>
+          <option value="-rating">Mejor calificados</option>
+          <option value="-metacritic">Metacritic</option>
+          <option value="-released">Más recientes</option>
+          <option value="name">Nombre (A-Z)</option>
+        </select>
+        <button class="btn btn-primary">Buscar</button>
+      </form>
+
+      <p class="section-sub" id="resumen"></p>
+      <div id="resultados"></div>
+      <div class="pager hidden" id="pager">
+        <button class="btn btn-outline btn-sm" id="prev">Anterior</button>
+        <span id="num-pagina"></span>
+        <button class="btn btn-outline btn-sm" id="next">Siguiente</button>
+      </div>
+    </div>
+  </main>
+  <script src="/js/common.js"></script>
+  <script src="/js/juegos.js"></script>
+</body>
+</html>

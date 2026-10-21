@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iniciar sesión · GameVault</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <main>
+    <div class="container form-wrap">
+      <form class="form-card" id="form-login" novalidate>
+        <h1>Iniciar sesión</h1>
+        <p class="lead">Bienvenido de vuelta, jugador.</p>
+        <div class="alert hidden" id="alerta" role="alert"></div>
+
+        <div class="field">
+          <label for="identificador">Usuario o correo</label>
+          <input id="identificador" name="identificador" autocomplete="username" maxlength="100" />
+          <div class="error-msg"></div>
+        </div>
+        <div class="field">
+          <label for="password">Contraseña</label>
+          <div class="pass-wrap">
+            <input id="password" name="password" type="password" autocomplete="current-password" maxlength="64" />
+            <button type="button" class="pass-toggle" data-target="password" aria-label="Mostrar contraseña" data-icon="ojo"></button>
+          </div>
+          <div class="error-msg"></div>
+        </div>
+
+        <button class="btn btn-primary btn-block" id="btn-enviar">Entrar</button>
+        <p class="form-foot">¿No tienes cuenta? <a href="/registro">Regístrate</a></p>
+      </form>
+    </div>
+  </main>
+  <script src="/js/common.js"></script>
+  <script src="/js/login.js"></script>
+</body>
+</html>

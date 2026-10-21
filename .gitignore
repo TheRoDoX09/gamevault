@@ -1,0 +1,11 @@
+# Entorno virtual de Python
+venv/
+__pycache__/
+*.pyc
+
+# Variables de entorno (claves de API y secretos) - NUNCA se suben
+.env
+
+# Sistema
+.DS_Store
+Thumbs.db
